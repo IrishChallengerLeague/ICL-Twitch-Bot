@@ -41,7 +41,7 @@ client.on("chat", (channel, user, message, self) => {
   } else if (message.toLowerCase() === "!discord") {
     client.say(channel, "https://discord.gg/RjhDRY2kfH");
   } else if (message.toLowerCase() === "!dice") {
-    let roll=Math.floor(Math.random()*(6-1)+1);
-    client.say(channel, `@${user["display-name"]} rolled ${roll}`)
+    let roll = Math.floor(Math.random() * (6 - 1) + 1);
+    client.say(channel, `@${user["display-name"]} rolled ${roll}`);
   }
 });

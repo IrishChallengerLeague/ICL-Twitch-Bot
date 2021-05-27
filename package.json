@@ -1,0 +1,16 @@
+{
+  "name": "icl-twitch-bot",
+  "version": "0.0.1",
+  "description": "ICL Twitch Bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fletcher & Yannick",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "tmi.js": "^1.8.3"
+  }
+}

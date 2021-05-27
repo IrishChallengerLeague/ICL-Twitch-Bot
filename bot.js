@@ -21,6 +21,8 @@ const client = new tmi.client(options);
 client.connect();
 
 client.on("connected", (address, port) => {
+  client.say("icl_hub", "/color green");
+  client.say("icl_hub_b", "/color green");
   client.action("icl_hub", "ICL Twitch Bot Loaded");
   client.action("icl_hub_b", "ICL Twitch Bot Loaded");
 });

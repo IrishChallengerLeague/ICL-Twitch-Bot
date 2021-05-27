@@ -21,8 +21,8 @@ const client = new tmi.client(options);
 client.connect();
 
 client.on("connected", (address, port) => {
-  client.action("icl_hub", "ICL Twitch Bot Loaded!");
-  client.action("icl_hub_b", "ICL Twitch Bot Loaded!");
+  client.action("icl_hub", "ICL Twitch Bot Loaded");
+  client.action("icl_hub_b", "ICL Twitch Bot Loaded");
 });
 
 client.on("chat", (channel, user, message, self) => {

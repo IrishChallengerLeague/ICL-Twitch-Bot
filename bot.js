@@ -39,7 +39,7 @@ client.on("chat", (channel, user, message, self) => {
   } else if (message.toLowerCase() === "!faceit") {
     client.say(channel, "https://www.faceit.com/en/inv/jaoMmaB");
   } else if (message.toLowerCase() === "!donate") {
-    client.say(channel, "This is a test function");
+    client.say(channel, "https://www.streamlabs.com/icl_hub");
   } else if (message.toLowerCase() === "!discord") {
     client.say(channel, "https://discord.gg/RjhDRY2kfH");
   } else if (message.toLowerCase() === "!dice") {

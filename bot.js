@@ -13,7 +13,7 @@ const options = {
     username: process.env.TWITCH_BOT_USERNAME,
     password: process.env.TWITCH_OAUTH_TOKEN,
   },
-  channels: ["icl_hub", "icl_hub_b"],
+  channels: ["icl_hub", "icl_hub_b", "djml404"],
 };
 
 const client = new tmi.client(options);
@@ -42,6 +42,8 @@ client.on("chat", (channel, user, message, self) => {
     client.say(channel, "https://www.streamlabs.com/icl_hub");
   } else if (message.toLowerCase() === "!discord") {
     client.say(channel, "https://discord.gg/RjhDRY2kfH");
+  } else if (message.toLowerCase() === "!red") {
+    client.say(channel, "https://www.twitch.tv/djml404/clip/SwissHardMonitorBibleThump-UN1g9j6SlgE2t1Y7?filter=clips&range=7d&sort=time");
   } else if (message.toLowerCase() === "!dice") {
     let roll = Math.floor(Math.random() * (6 - 1) + 1);
     client.say(channel, `@${user["display-name"]} rolled ${roll}`);
